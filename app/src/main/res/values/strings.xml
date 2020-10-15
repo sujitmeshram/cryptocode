@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Crypto Code</string>
+    <string name="encryption" >AES Encryption</string>
+</resources>

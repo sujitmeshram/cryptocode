@@ -67,7 +67,7 @@ public class MD5 extends AppCompatActivity {
                 // //and pehla character utha leta and builder me add krde
             }
             generatedPassword=sb.toString();
-            Log.d("BABBAR","generated password"+generatedPassword);
+            Log.d("SUJIT","generated password"+generatedPassword);
             return generatedPassword;
 
         }

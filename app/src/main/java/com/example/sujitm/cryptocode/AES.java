@@ -55,7 +55,7 @@ public class AES extends AppCompatActivity {
                     //  pwdtext = password_text.getText().toString();
                     outputstring = encrypt(inptext, pwdtext);
                     output_text.setText(outputstring);
-                    //make a toast her e to say encypted successfully
+                    //make a toast to say encypted successfully
                   //  Toast.makeText(MainActivity.this,"Encrypted Successfully!!!",Toast.LENGTH_SHORT).show();
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -131,7 +131,7 @@ public class AES extends AppCompatActivity {
 
     private String encrypt(String data, String password_text) throws Exception {
         SecretKeySpec key = generateKey(password_text);
-        //Log.d("NIKHIL", "encrypt key:" + key.toString());
+        //Log.d("SUJIT", "encrypt key:" + key.toString());
         Cipher c = Cipher.getInstance("AES/ECB/PKCS5Padding");//creating an object
         c.init(Cipher.ENCRYPT_MODE, key);//initialisation
         byte[] encVal = c.doFinal(data.getBytes("UTF-8"));
